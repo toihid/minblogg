@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+}
+.container {
+  padding: 30px;
+  border: 2px solid grey;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
