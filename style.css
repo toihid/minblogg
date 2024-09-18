@@ -1,6 +1,12 @@
 body {
   margin: 0;
 }
+.d-flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -8,8 +14,34 @@ body {
   min-height: 100vh;
 }
 header {
-  background-color: #dcdcdc;
   display: flex;
+  flex-direction: column;
+}
+.siteInfo {
+  display: flex;
+  height: 100px;
+  flex-wrap: wrap;
+}
+.siteInfo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siteInfo__logo {
+  flex: 1;
+  flex-direction: column;
+}
+
+.siteInfo .siteInfo__socialIcons {
+  flex: 4;
+  justify-content: end;
+}
+.siteInfo__socialIcons img {
+  width: 50px;
+}
+.siteInfo__socialIcons ul li {
+  list-style: none;
+  margin: 0 5px;
 }
 
 h1 {
