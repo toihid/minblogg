@@ -54,6 +54,7 @@ h1 {
 .siteCaption {
   background-color: #969696;
 }
+
 .section-post {
   display: flex;
 }
@@ -62,8 +63,16 @@ h1 {
 }
 .section-post__sidebar {
   flex: 1;
+  height: 400px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 30px;
 }
-
+article.post {
+  margin: 20px 0;
+}
 .post__title {
   margin-top: 0;
 }
@@ -80,6 +89,41 @@ h1 {
 }
 .post__publish div {
   flex: 1;
+}
+.post__content__image {
+  flex: 2;
+}
+.post__content__image {
+  flex: 2;
+}
+.post__content__desc {
+  flex: 3;
+}
+.mw-100 {
+  max-width: 100%;
+}
+
+.post__content {
+  height: 283px;
+}
+.post__content__desc {
+  flex: 3;
+  height: 283px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+}
+.post__content__desc__text {
+  max-height: 230px;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.text-right {
+  text-align: right;
+}
+.post__publish__date {
+  text-align: right;
 }
 footer {
   background-color: #969696;
