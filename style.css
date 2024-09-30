@@ -1,7 +1,21 @@
-body {
+/*some helping classes*/
+.p10 {
+  padding: 10px;
+}
+.py10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.m10 {
   margin: 0;
 }
-.d-flex {
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+.flex-container {
   display: flex;
 }
 .text-center {
@@ -46,13 +60,12 @@ header {
   margin: 0 5px;
 }
 
-h1 {
-  text-align: center;
-  color: blueviolet;
-}
-
 .siteCaption {
   background-color: #969696;
+  color: #fff;
+}
+.siteCaption h1 {
+  font-size: 2em;
 }
 
 .section-post {
@@ -65,11 +78,14 @@ h1 {
   flex: 1;
   height: 400px;
   border: 1px solid grey;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px 0 30px 30px;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
 }
+
 article.post {
   margin: 20px 0;
 }
@@ -99,7 +115,7 @@ article.post {
 .post__content__desc {
   flex: 3;
 }
-.mw-100 {
+.full-width {
   max-width: 100%;
 }
 
@@ -127,4 +143,32 @@ article.post {
 }
 footer {
   background-color: #969696;
+}
+
+.post__content__desc__read-more a {
+  border: 1px solid grey;
+  color: #000;
+  padding: 5px;
+  text-decoration: none;
+}
+.post__content__desc__read-more a:hover {
+  border: 1px solid lightseagreen;
+}
+footer {
+  flex-wrap: wrap;
+}
+footer nav ul {
+  flex: 1;
+}
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+footer nav a:hover {
+  color: #ff7f50;
+}
+footer nav li {
+  list-style: none;
+  padding: 5px 0;
 }
