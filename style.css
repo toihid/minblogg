@@ -37,6 +37,14 @@ header {
   display: flex;
   height: 100px;
   flex-wrap: wrap;
+  background: linear-gradient(to right, #d3d3d3, #e0e0e0);
+}
+
+.siteInfo__logo a {
+  font-family: "Great Vibes", cursive;
+  text-decoration: none;
+  color: #6a0dad;
+  font-size: 2em;
 }
 .siteInfo div {
   display: flex;
@@ -58,6 +66,10 @@ header {
 .siteInfo__socialIcons ul li {
   list-style: none;
   margin: 0 5px;
+}
+.siteInfo__socialIcons ul li i {
+  color: #6a0dad;
+  font-size: 3em;
 }
 
 .siteCaption {
@@ -116,7 +128,7 @@ article.post {
   flex: 3;
 }
 .full-width {
-  max-width: 100%;
+  width: 100%;
 }
 
 .post__content {
@@ -152,7 +164,8 @@ footer {
   text-decoration: none;
 }
 .post__content__desc__read-more a:hover {
-  border: 1px solid lightseagreen;
+  background: #6a0dad;
+  color: #fff;
 }
 footer {
   flex-wrap: wrap;
@@ -166,9 +179,47 @@ footer nav a {
   font-size: 1.5em;
 }
 footer nav a:hover {
-  color: #ff7f50;
+  color: #6a0dad;
 }
 footer nav li {
   list-style: none;
   padding: 5px 0;
+}
+
+/* design for post page */
+.text-left {
+  text-align: left;
+}
+#post-page .post__publish {
+  align-items: center;
+}
+#post-page .post__content,
+#post-page .post__content__desc,
+#post-page .post__content__desc__text {
+  height: auto;
+  max-height: fit-content;
+}
+#post-page .post__content img {
+  float: left;
+  max-width: 300px;
+  margin: 0 15px 15px;
+}
+#post-page .post__publish__share nav ul {
+  justify-content: end;
+}
+#post-page .post__publish__share nav ul li {
+  margin: 5px;
+  font-size: 1.5em;
+}
+#post-page .post__publish__share nav ul li i {
+  color: #6a0dad;
+}
+.post__publish__share nav ul {
+  margin: 0;
+}
+.post__publish__share nav ul li {
+  list-style: none;
+}
+.post__publish__share nav li a img {
+  width: 50px;
 }
